@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t,dsa1,toc1,dm1,dsa2,toc2,dm2,x,y;
+	scanf("%d",&t);
+
+	for(int i = 0;i<t;i++)
+	{
+	    scanf("%d",&dsa1);
+	    scanf("%d",&toc1);
+	    scanf("%d",&dm1);
+	    scanf("%d",&dsa2);
+	    scanf("%d",&toc2);
+	    scanf("%d",&dm2);
+x= dsa1+toc1+dm1;
+y= dsa2+toc2+dm2;
+	    if(x>y)
+	    {
+	        printf("dragon");
+	    }
+	    else if(x<y)
+	    {
+	        printf("sloth");
+	    }
+else	    if(x==y)
+	    {
+	        if(dsa1>dsa2)
+	        {
+	            printf("dragon");
+	        }
+	        else if(dsa1<dsa2)
+	        {
+	            printf("sloth");
+	        }
+	    
+	        if(dsa1==dsa2)
+	        {
+	            if(toc1>toc2)
+	            {
+	                printf("dragon");
+	            }
+	            else if(toc1<toc2)
+	            {
+	                printf("sloth");
+	            }
+	        
+	    
+	            if(toc1==toc2)
+	         {
+	            if(dm1>dm2)
+	            {
+	                printf("dragon");
+	            }
+	            else if(dm1<dm2)
+	            {
+	                printf("sloth");
+	            }
+	          
+	        
+	          else if(dm1==dm2)
+	            {
+	                printf("tie");
+	            }
+	        }}
+	    }
+	    
+	    printf("\n");
+	}
+	return 0;
+}
+
