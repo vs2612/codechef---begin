@@ -18,16 +18,16 @@ int main()
 				if (number[i] < number[j])
 				{
 					a = number[i];
-					number[i] = number[j];
+					number[i] = number[j];   //file being sorted in descending order so that we can get min no. of FDs to get the required coins
 					number[j] = a;
 				}
 			}
 		}
 		for(int i = 0;i<n;i++)
 		{
-		    sum+=number[i];
-		    f++;
-		    if(sum>=x)
+		    sum+=number[i]; // sum of coins in FDs
+		    f++;	    // Number of FDs req. to get the desired coins
+		    if(sum>=x) 	    
 		    {
 		        ok = 1;
 		        break;
