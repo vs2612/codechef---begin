@@ -70,3 +70,4 @@ else	    if(x==y)
 	return 0;
 }
 
+//1) line 26 - in this else if will be closed at the end because the conditions come under this one, same goes for the other conditions for example  = if(dsa1==dsa2) it will be closed at the end. so the conditions given in the question are met in this condition.
